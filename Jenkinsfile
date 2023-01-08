@@ -27,6 +27,7 @@ pipeline {
           //   sh "npm run test:ci:record"
         // }
       }
+    }
 
       stage('start-server') {
         steps {
@@ -72,4 +73,3 @@ pipeline {
       }
     }
   }
-}
