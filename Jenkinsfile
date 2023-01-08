@@ -63,6 +63,7 @@ pipeline {
           }
         }
       }
+  }
 
       post {
         // Shutdown the server running in the background
@@ -71,5 +72,4 @@ pipeline {
           sh 'pkill -f http-server'
         }
       }
-    }
   }
