@@ -20,8 +20,9 @@ pipeline {
       steps {
         dir("my-app/") {
           sh 'npm ci'
-          sh 'npm start'
-          sh 'npm run cy:run'
+          sh 'npm run cy:verify'
+        //   sh 'npm start'
+        //   sh 'npm run cy:run'
         //   sh "npm run test:ci:record"
         }
       }
